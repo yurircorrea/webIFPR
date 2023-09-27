@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora JS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container text-center">
+		<form action="#" onsubmit="event.preventDefault()" method="POST" id="formCalc">
+			<div class="row title-box">
+				<div class="col-md-12">
+					<img src="img/logo.png" alt="Logo" class="logo">
+				</div>
+				<div class="col-md-12">
+					<h3 class="title">Calculadora JavaScript</h3>
+				</div>
+			</div>
+
+			<div class="row form-box">
+				<div class="col-sm-4 col-md-4 form-floating input-gp">
+					<input step="any" type="number" class="form-control text-center" autofocus id="number1" placeholder="1º número" />
+					<label for="number1">1º número</label>
+				</div>
+
+				<div class="col-sm-2 col-md-2 form-floating input-gp">
+					<select class="form-select text-center" id="operator">
+						<option value=""></option>
+						<option value="sum">+</option>
+						<option value="sub">-</option>
+						<option value="mult">*</option>
+						<option value="div">/</option>
+					</select>
+					<label for="operator">Operação</label>
+				</div>
+
+				<div class="col-sm-4 col-md-4 form-floating input-gp">
+					<input step="any" type="number" class="form-control text-center"  id="number2" placeholder="2º número" />
+					<label for="number2">2º número</label>
+				</div>
+
+				<div class="col-sm-2 col-md-2 input-gp">
+					<button class="btn btn-success btn-lg" id="btnCalcular"> Calcular </button>
+				</div>
+			</div>
+
+				<div class="row result-box" id="result-box" style="display: none">
+				<div class="col-md-1 col-sm-1"></div>
+				<div class="col-md-4 col-sm-4">
+					<h3 class="result-title">Resultado: </h3>
+				</div>
+				<div class="col-md-4 col-sm-4 input-gp">
+					<input step="any" value="" type="number" disabled class="form-control text-center"  id="result"/>
+				</div>
+				<div class="col-md-2 col-sm-2">
+					<button class="btn btn-warning btn-lg" id="btnReset"> Reset </button>
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>

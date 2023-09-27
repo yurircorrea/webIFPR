@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+    .input-gp{
+        margin-bottom: 20px;
+    }
+}
+
+.container{
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.title-box, .result-box{
+    margin-top: 15px!important;
+    margin-bottom: 15px;
+}
+
+
+.title, .result-title{
+    font-weight: normal;
+    font-family: "Segoe UI Light", serif;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.form-control, .form-select, .form-floating{
+    font-family: "Segoe UI Light", serif;
+}

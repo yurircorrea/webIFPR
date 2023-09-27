@@ -1,0 +1,54 @@
+body{
+    background: rgb(190,190,190);
+    font-family: "Calibri", serif;
+}
+
+.text-color1{
+    color: rgb(183, 117, 4);
+}
+
+div.container{
+    background: rgba(255,255,255, 1);
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.line-color{
+    color: rgb(200,200,200)
+}
+
+.perfil-col{
+    padding: 5px;
+    max-width: 50%
+}
+
+.contato-col{
+    padding: 5px;
+    max-width: 20%
+}
+
+.perfil-text, .formacao-text{
+    text-align: justify;
+    font-family: Arial, serif;
+}
+
+.contato-col {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.contato-row{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.contato-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
